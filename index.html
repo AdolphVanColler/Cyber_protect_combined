@@ -1,57 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cyber Protect Insurance</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f7fa;
-            color: #333;
+            background-color: #f4f7fa;
+            color: #222;
         }
         header {
-            background: #0a3d62;
+            background-color: #0a3d62;
             color: white;
-            padding: 2rem;
+            padding: 2.5rem 1rem;
             text-align: center;
         }
         header h1 {
+            font-size: 2.75rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
             margin: 0;
-            font-size: 2.5rem;
         }
         section {
-            padding: 2rem;
-            max-width: 900px;
+            padding: 2.5rem 1.5rem;
+            max-width: 960px;
             margin: auto;
+            text-align: center;
+        }
+        h2 {
+            color: #0a3d62;
+            font-size: 2rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+            text-align: left;
+            display: inline-block;
+        }
+        ul li::before {
+            content: "✓";
+            color: #0a3d62;
+            font-weight: bold;
+            margin-right: 0.5rem;
         }
         .cta-buttons {
             display: flex;
             justify-content: center;
             gap: 2rem;
             margin-top: 2rem;
+            flex-wrap: wrap;
         }
         .cta-buttons a {
             text-decoration: none;
-            background: #0a3d62;
+            background-color: #0a3d62;
             color: white;
             padding: 1rem 2rem;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.3s ease, transform 0.2s;
         }
         .cta-buttons a:hover {
-            background: #1e5a8a;
+            background-color: #134f7d;
+            transform: scale(1.05);
         }
         footer {
-            background: #0a3d62;
+            background-color: #0a3d62;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 1.2rem 1rem;
+            margin-top: 3rem;
         }
         @media (max-width: 600px) {
             .cta-buttons {
@@ -64,19 +88,41 @@
 <body>
     <header>
         <h1>Cyber Protect Insurance</h1>
-        <p>Comprehensive Cyber Risk Protection for Individuals and Businesses</p>
+        <p>Defend your digital future — 24/7 cyber risk coverage for individuals and businesses</p>
     </header>
+
     <section>
-        <h2>Why Cyber Protect?</h2>
-        <p>Cyber Protect Insurance offers a proactive and reactive approach to cyber threats. Whether you're an individual or a business, our policies are designed to help you mitigate losses associated with cyber incidents such as identity theft, data breaches, cyber extortion, and more.</p>
-        <p>With 24/7 access to a dedicated cyber emergency response team, you can rest assured that expert help is always available when you need it most.</p>
+        <h2>Why Choose Cyber Protect?</h2>
+        <p>In today’s hyper-connected world, a single click can compromise your entire life or business. That’s why we don’t just insure — we protect.</p>
+        <ul>
+            <li>Round-the-clock cyber emergency support</li>
+            <li>Coverage against identity theft, ransomware, phishing, data breaches, and more</li>
+            <li>Custom-tailored plans for personal and business needs</li>
+            <li>Expert-led prevention strategies and recovery assistance</li>
+        </ul>
+        <p style="margin-top: 1.5rem;">Join thousands who trust us to keep their data safe and their lives uninterrupted.</p>
+
         <div class="cta-buttons">
-            <a href="https://forms.cloud.microsoft/r/S6xtpHDXEv?origin=IprLink" target="_blank">Learn more about personal cover</a>
-            <a href="https://forms.cloud.microsoft/r/YhvnymMsbx?origin=lprLink" target="_blank">Learn more about business cover</a>
+            <a href="https://adolphvancoller.github.io/cyber_protect_website_with_apply/index.html" target="_blank">
+                Explore Personal Protection
+            </a>
+            <a href="https://adolphvancoller.github.io/cyber_protect_business/index.html" target="_blank">
+                Explore Business Coverage
+            </a>
         </div>
     </section>
+
     <footer>
         &copy; 2024 Cyber Protect Insurance. All rights reserved.
+        <p>Your broker and Cyber insurance specialist: Corné Smit <br><strong>Email:</strong> corne.smit@asi.co.za<br><strong>Phone:</strong> +27 (61) 721-8537<br>ASI Bestsure in Partner with Phishield Cyber Insurance solutions.</p>
+        <div style="margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/corn%C3%A9-smit-244386306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+           target="_blank"
+           style="display: inline-block; background-color: #0077b5; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; transition: background 0.3s ease;">
+            CLICK HERE to learn more about me!
+        </a>
+    </div>
     </footer>
+    
 </body>
 </html>
